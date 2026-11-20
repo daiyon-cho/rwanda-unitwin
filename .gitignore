@@ -42,3 +42,7 @@ build/
 coverage/
 .next/
 .turbo/
+
+# Browser test output
+.playwright-mcp/
+.bkit/

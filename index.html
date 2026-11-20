@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop clothes and accessories online.">
+  <title>Kigali Threads | Clothes & Accessories</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Kigali<span>Threads</span></a>
+      <nav class="nav">
+        <a href="index.html">Shop</a>
+        <a href="cart.html" class="cart-link">Cart <span class="badge" data-cart-count hidden>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>New season, new style</h1>
+        <p>Clothes and accessories picked for everyday comfort.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="toolbar">
+        <input type="search" id="search" placeholder="Search products…" aria-label="Search products">
+        <select id="category" aria-label="Filter by category">
+          <option value="">All categories</option>
+        </select>
+        <select id="sort" aria-label="Sort products">
+          <option value="">Featured</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="name">Name A–Z</option>
+        </select>
+        <span id="result-count" class="muted"></span>
+      </div>
+
+      <div id="product-grid" class="grid" aria-live="polite">
+        <div class="state"><div class="spinner"></div><p>Loading products…</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Kigali Threads · Photos from <a href="https://unsplash.com">Unsplash</a></div>
+  </footer>
+
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>
